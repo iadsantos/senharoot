@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Limpar todas as regras existentes
+iptables -F
+
+# Permitir todo o tráfego de entrada e saída
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+
+# Salvar as regras para que sejam aplicadas após reinicialização do sistema
+iptables-save > /etc/iptables/rules.v4
+
+echo "Todas as portas liberadas com sucesso. Tráfego permitido em todas as portas de entrada e saída."
