@@ -13,5 +13,7 @@ Execute diretamente no terminal com:
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/iadsantos/senharoot/main/senharoot.sh)
 
+---
+
 ```bash
 bash <(wget -O configurar_firewall.sh https://raw.githubusercontent.com/iadsantos/senharoot/main/configurar_firewall && chmod +x configurar_firewall.sh && sudo ./configurar_firewall.sh)
